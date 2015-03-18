@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		942D394416F3898D006D869C /* WelcomeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942D393F16F3898D006D869C /* WelcomeWindow.xib */; };
+		942D394516F3898D006D869C /* SDWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942D394116F3898D006D869C /* SDWelcomeWindowController.m */; };
+		9449AA1419FADBB900095E6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9449AA1319FADBB900095E6E /* Images.xcassets */; };
+		946CF3FA16E62ECF002DA707 /* SDValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 946CF3F916E62ECF002DA707 /* SDValueTransformers.m */; };
+		947C108616E7971E00B1D52E /* SDOpenAtLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 947C108516E7971E00B1D52E /* SDOpenAtLogin.m */; };
+		949B57DF19F8A38600F412CF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949B57DE19F8A38600F412CF /* MainMenu.xib */; };
+		949B57FA19F8C26C00F412CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949B57F919F8C26C00F412CF /* Security.framework */; };
+		94D6C0C216E0DDD700868523 /* SDPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C0C116E0DDD700868523 /* SDPreferences.m */; };
+		94D6C0C516E0DF4300868523 /* SDGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D6C0C416E0DF4300868523 /* SDGrid.m */; };
+		94D6C0DF16E0EA8E00868523 /* sd_intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D6C0DB16E0EA8E00868523 /* sd_intro.png */; };
+		94ED279C16E01A440044ED33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED279B16E01A440044ED33 /* Cocoa.framework */; };
+		94ED27AF16E01A440044ED33 /* SDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27AE16E01A440044ED33 /* SDAppDelegate.m */; };
+		94ED27EC16E024F20044ED33 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27E316E024F20044ED33 /* MASShortcut.m */; };
+		94ED27ED16E024F20044ED33 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27E516E024F20044ED33 /* MASShortcut+Monitoring.m */; };
+		94ED27EE16E024F20044ED33 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27E716E024F20044ED33 /* MASShortcut+UserDefaults.m */; };
+		94ED27EF16E024F20044ED33 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27E916E024F20044ED33 /* MASShortcutView.m */; };
+		94ED27F016E024F20044ED33 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27EB16E024F20044ED33 /* MASShortcutView+UserDefaults.m */; };
+		94ED27F416E026370044ED33 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ED27F316E026360044ED33 /* Carbon.framework */; };
+		94ED27F816E02A900044ED33 /* SDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27F716E02A900044ED33 /* SDWindow.m */; };
+		94ED27FE16E034820044ED33 /* SDPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED27FC16E034820044ED33 /* SDPreferencesWindowController.m */; };
+		94ED27FF16E034820044ED33 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94ED27FD16E034820044ED33 /* PreferencesWindow.xib */; };
+		94ED280216E079C50044ED33 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94ED280116E079C50044ED33 /* defaults.plist */; };
+		94ED280916E08F880044ED33 /* statusitem.png in Resources */ = {isa = PBXBuildFile; fileRef = 94ED280816E08F880044ED33 /* statusitem.png */; };
+		94F2E1D819F89C140089E4CA /* SDAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E1D719F89C140089E4CA /* SDAccessibility.m */; };
+		94F2E1DA19F8A27C0089E4CA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E1D919F8A27C0089E4CA /* Credits.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		942D393F16F3898D006D869C /* WelcomeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeWindow.xib; sourceTree = "<group>"; };
+		942D394016F3898D006D869C /* SDWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWelcomeWindowController.h; sourceTree = "<group>"; };
+		942D394116F3898D006D869C /* SDWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWelcomeWindowController.m; sourceTree = "<group>"; };
+		9449AA1319FADBB900095E6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		946CF3F916E62ECF002DA707 /* SDValueTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDValueTransformers.m; sourceTree = "<group>"; };
+		947C108416E7971D00B1D52E /* SDOpenAtLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDOpenAtLogin.h; sourceTree = "<group>"; };
+		947C108516E7971E00B1D52E /* SDOpenAtLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDOpenAtLogin.m; sourceTree = "<group>"; };
+		949B57DE19F8A38600F412CF /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		949B57F919F8C26C00F412CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94D6C0C016E0DDD700868523 /* SDPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPreferences.h; sourceTree = "<group>"; };
+		94D6C0C116E0DDD700868523 /* SDPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPreferences.m; sourceTree = "<group>"; };
+		94D6C0C316E0DF4300868523 /* SDGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDGrid.h; sourceTree = "<group>"; };
+		94D6C0C416E0DF4300868523 /* SDGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDGrid.m; sourceTree = "<group>"; };
+		94D6C0DB16E0EA8E00868523 /* sd_intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sd_intro.png; sourceTree = "<group>"; };
+		94ED279816E01A440044ED33 /* AppGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ED279B16E01A440044ED33 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		94ED279E16E01A440044ED33 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		94ED279F16E01A440044ED33 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		94ED27A016E01A440044ED33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94ED27A316E01A440044ED33 /* AppGrid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppGrid-Info.plist"; sourceTree = "<group>"; };
+		94ED27AD16E01A440044ED33 /* SDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDAppDelegate.h; sourceTree = "<group>"; };
+		94ED27AE16E01A440044ED33 /* SDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDAppDelegate.m; sourceTree = "<group>"; };
+		94ED27E216E024F20044ED33 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		94ED27E316E024F20044ED33 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		94ED27E416E024F20044ED33 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		94ED27E516E024F20044ED33 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		94ED27E616E024F20044ED33 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		94ED27E716E024F20044ED33 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		94ED27E816E024F20044ED33 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		94ED27E916E024F20044ED33 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		94ED27EA16E024F20044ED33 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		94ED27EB16E024F20044ED33 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		94ED27F316E026360044ED33 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		94ED27F616E02A900044ED33 /* SDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWindow.h; sourceTree = "<group>"; };
+		94ED27F716E02A900044ED33 /* SDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWindow.m; sourceTree = "<group>"; };
+		94ED27FB16E034820044ED33 /* SDPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPreferencesWindowController.h; sourceTree = "<group>"; };
+		94ED27FC16E034820044ED33 /* SDPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPreferencesWindowController.m; sourceTree = "<group>"; };
+		94ED27FD16E034820044ED33 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		94ED280116E079C50044ED33 /* defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = defaults.plist; sourceTree = "<group>"; };
+		94ED280816E08F880044ED33 /* statusitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusitem.png; sourceTree = "<group>"; };
+		94F2E1D619F89C140089E4CA /* SDAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAccessibility.h; sourceTree = "<group>"; };
+		94F2E1D719F89C140089E4CA /* SDAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAccessibility.m; sourceTree = "<group>"; };
+		94F2E1D919F8A27C0089E4CA /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94ED279516E01A440044ED33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949B57FA19F8C26C00F412CF /* Security.framework in Frameworks */,
+				94ED27F416E026370044ED33 /* Carbon.framework in Frameworks */,
+				94ED279C16E01A440044ED33 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		941E6B4E16E668D100B4FBA3 /* SDFramework */ = {
+			isa = PBXGroup;
+			children = (
+				947C108416E7971D00B1D52E /* SDOpenAtLogin.h */,
+				947C108516E7971E00B1D52E /* SDOpenAtLogin.m */,
+				946CF3F916E62ECF002DA707 /* SDValueTransformers.m */,
+				94F2E1D619F89C140089E4CA /* SDAccessibility.h */,
+				94F2E1D719F89C140089E4CA /* SDAccessibility.m */,
+			);
+			name = SDFramework;
+			sourceTree = "<group>";
+		};
+		94D6C0C616E0E29C00868523 /* WelcomeWindow */ = {
+			isa = PBXGroup;
+			children = (
+				942D393F16F3898D006D869C /* WelcomeWindow.xib */,
+				942D394016F3898D006D869C /* SDWelcomeWindowController.h */,
+				942D394116F3898D006D869C /* SDWelcomeWindowController.m */,
+				94D6C0DB16E0EA8E00868523 /* sd_intro.png */,
+			);
+			name = WelcomeWindow;
+			sourceTree = "<group>";
+		};
+		94ED278F16E01A440044ED33 = {
+			isa = PBXGroup;
+			children = (
+				94ED27A116E01A440044ED33 /* AppGrid */,
+				94ED279A16E01A440044ED33 /* Frameworks */,
+				94ED279916E01A440044ED33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94ED279916E01A440044ED33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94ED279816E01A440044ED33 /* AppGrid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94ED279A16E01A440044ED33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949B57F919F8C26C00F412CF /* Security.framework */,
+				94ED27F316E026360044ED33 /* Carbon.framework */,
+				94ED279B16E01A440044ED33 /* Cocoa.framework */,
+				94ED279D16E01A440044ED33 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94ED279D16E01A440044ED33 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94ED279E16E01A440044ED33 /* AppKit.framework */,
+				94ED279F16E01A440044ED33 /* CoreData.framework */,
+				94ED27A016E01A440044ED33 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		94ED27A116E01A440044ED33 /* AppGrid */ = {
+			isa = PBXGroup;
+			children = (
+				94ED27F916E034510044ED33 /* Top Level */,
+				94D6C0C616E0E29C00868523 /* WelcomeWindow */,
+				94ED27F516E02A770044ED33 /* Window Manager */,
+				94F2E1DB19F8A2F00089E4CA /* Preferences */,
+				941E6B4E16E668D100B4FBA3 /* SDFramework */,
+				94ED27E116E024EA0044ED33 /* GlobalShortcuts */,
+				94ED27A216E01A440044ED33 /* Supporting Files */,
+			);
+			path = AppGrid;
+			sourceTree = "<group>";
+		};
+		94ED27A216E01A440044ED33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9449AA1319FADBB900095E6E /* Images.xcassets */,
+				94ED27A316E01A440044ED33 /* AppGrid-Info.plist */,
+				94ED280816E08F880044ED33 /* statusitem.png */,
+				94ED280116E079C50044ED33 /* defaults.plist */,
+				94F2E1D919F8A27C0089E4CA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94ED27E116E024EA0044ED33 /* GlobalShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				94ED27E216E024F20044ED33 /* MASShortcut.h */,
+				94ED27E316E024F20044ED33 /* MASShortcut.m */,
+				94ED27E416E024F20044ED33 /* MASShortcut+Monitoring.h */,
+				94ED27E516E024F20044ED33 /* MASShortcut+Monitoring.m */,
+				94ED27E616E024F20044ED33 /* MASShortcut+UserDefaults.h */,
+				94ED27E716E024F20044ED33 /* MASShortcut+UserDefaults.m */,
+				94ED27E816E024F20044ED33 /* MASShortcutView.h */,
+				94ED27E916E024F20044ED33 /* MASShortcutView.m */,
+				94ED27EA16E024F20044ED33 /* MASShortcutView+UserDefaults.h */,
+				94ED27EB16E024F20044ED33 /* MASShortcutView+UserDefaults.m */,
+			);
+			name = GlobalShortcuts;
+			sourceTree = "<group>";
+		};
+		94ED27F516E02A770044ED33 /* Window Manager */ = {
+			isa = PBXGroup;
+			children = (
+				94ED27F616E02A900044ED33 /* SDWindow.h */,
+				94ED27F716E02A900044ED33 /* SDWindow.m */,
+				94D6C0C316E0DF4300868523 /* SDGrid.h */,
+				94D6C0C416E0DF4300868523 /* SDGrid.m */,
+			);
+			name = "Window Manager";
+			sourceTree = "<group>";
+		};
+		94ED27F916E034510044ED33 /* Top Level */ = {
+			isa = PBXGroup;
+			children = (
+				949B57DE19F8A38600F412CF /* MainMenu.xib */,
+				94ED27AD16E01A440044ED33 /* SDAppDelegate.h */,
+				94ED27AE16E01A440044ED33 /* SDAppDelegate.m */,
+			);
+			name = "Top Level";
+			sourceTree = "<group>";
+		};
+		94F2E1DB19F8A2F00089E4CA /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				94ED27FD16E034820044ED33 /* PreferencesWindow.xib */,
+				94ED27FB16E034820044ED33 /* SDPreferencesWindowController.h */,
+				94ED27FC16E034820044ED33 /* SDPreferencesWindowController.m */,
+				94D6C0C016E0DDD700868523 /* SDPreferences.h */,
+				94D6C0C116E0DDD700868523 /* SDPreferences.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94ED279716E01A440044ED33 /* AppGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ED27B516E01A440044ED33 /* Build configuration list for PBXNativeTarget "AppGrid" */;
+			buildPhases = (
+				94ED279416E01A440044ED33 /* Sources */,
+				94ED279516E01A440044ED33 /* Frameworks */,
+				94ED279616E01A440044ED33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppGrid;
+			productName = AppGrid;
+			productReference = 94ED279816E01A440044ED33 /* AppGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94ED279016E01A440044ED33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steven Degutis";
+			};
+			buildConfigurationList = 94ED279316E01A440044ED33 /* Build configuration list for PBXProject "AppGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 94ED278F16E01A440044ED33;
+			productRefGroup = 94ED279916E01A440044ED33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94ED279716E01A440044ED33 /* AppGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94ED279616E01A440044ED33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED27FF16E034820044ED33 /* PreferencesWindow.xib in Resources */,
+				94ED280216E079C50044ED33 /* defaults.plist in Resources */,
+				94ED280916E08F880044ED33 /* statusitem.png in Resources */,
+				94D6C0DF16E0EA8E00868523 /* sd_intro.png in Resources */,
+				94F2E1DA19F8A27C0089E4CA /* Credits.rtf in Resources */,
+				942D394416F3898D006D869C /* WelcomeWindow.xib in Resources */,
+				9449AA1419FADBB900095E6E /* Images.xcassets in Resources */,
+				949B57DF19F8A38600F412CF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94ED279416E01A440044ED33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ED27AF16E01A440044ED33 /* SDAppDelegate.m in Sources */,
+				94ED27EC16E024F20044ED33 /* MASShortcut.m in Sources */,
+				94ED27ED16E024F20044ED33 /* MASShortcut+Monitoring.m in Sources */,
+				94ED27EE16E024F20044ED33 /* MASShortcut+UserDefaults.m in Sources */,
+				94ED27EF16E024F20044ED33 /* MASShortcutView.m in Sources */,
+				94ED27F016E024F20044ED33 /* MASShortcutView+UserDefaults.m in Sources */,
+				94ED27F816E02A900044ED33 /* SDWindow.m in Sources */,
+				94ED27FE16E034820044ED33 /* SDPreferencesWindowController.m in Sources */,
+				94D6C0C216E0DDD700868523 /* SDPreferences.m in Sources */,
+				94D6C0C516E0DF4300868523 /* SDGrid.m in Sources */,
+				946CF3FA16E62ECF002DA707 /* SDValueTransformers.m in Sources */,
+				947C108616E7971E00B1D52E /* SDOpenAtLogin.m in Sources */,
+				94F2E1D819F89C140089E4CA /* SDAccessibility.m in Sources */,
+				942D394516F3898D006D869C /* SDWelcomeWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		94ED27B316E01A440044ED33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		94ED27B416E01A440044ED33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		94ED27B616E01A440044ED33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppGrid\"",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = "AppGrid/AppGrid-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		94ED27B716E01A440044ED33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AppGrid\"",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = "AppGrid/AppGrid-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94ED279316E01A440044ED33 /* Build configuration list for PBXProject "AppGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ED27B316E01A440044ED33 /* Debug */,
+				94ED27B416E01A440044ED33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ED27B516E01A440044ED33 /* Build configuration list for PBXNativeTarget "AppGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ED27B616E01A440044ED33 /* Debug */,
+				94ED27B716E01A440044ED33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94ED279016E01A440044ED33 /* Project object */;
+}

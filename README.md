@@ -1,13 +1,9 @@
 AppGrid
 -------
 
-*The easiest window manager for OS X ever*
+*Grid-based keyboard window manager for Mac Os Ten*
 
 [Download the app (.zip)](https://github.com/sdegutis/AppGrid/releases/download/1.0.3/AppGrid.zip)
 
----
-
-Features:
-
-- Move and resize windows across an intuitive, predictable grid.
-- Uses keyboard hotkeys for maximum productivity and ease.
+- Move and resize windows along an invisible "grid" of your screen.
+- Keys default to Mash (cmd + ctrl + opt) and Vim keys, but are customizable.

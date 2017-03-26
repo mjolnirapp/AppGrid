@@ -32,6 +32,7 @@
 		94ED280916E08F880044ED33 /* statusitem.png in Resources */ = {isa = PBXBuildFile; fileRef = 94ED280816E08F880044ED33 /* statusitem.png */; };
 		94F2E1D819F89C140089E4CA /* SDAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E1D719F89C140089E4CA /* SDAccessibility.m */; };
 		94F2E1DA19F8A27C0089E4CA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E1D919F8A27C0089E4CA /* Credits.rtf */; };
+		94FED95D1E8746CC003D5626 /* statusitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94FED95C1E8746CC003D5626 /* statusitem@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		94F2E1D619F89C140089E4CA /* SDAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAccessibility.h; sourceTree = "<group>"; };
 		94F2E1D719F89C140089E4CA /* SDAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAccessibility.m; sourceTree = "<group>"; };
 		94F2E1D919F8A27C0089E4CA /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		94FED95C1E8746CC003D5626 /* statusitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statusitem@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				9449AA1319FADBB900095E6E /* Images.xcassets */,
 				94ED27A316E01A440044ED33 /* AppGrid-Info.plist */,
 				94ED280816E08F880044ED33 /* statusitem.png */,
+				94FED95C1E8746CC003D5626 /* statusitem@2x.png */,
 				94ED280116E079C50044ED33 /* defaults.plist */,
 				94F2E1D919F8A27C0089E4CA /* Credits.rtf */,
 			);
@@ -290,6 +293,7 @@
 				942D394416F3898D006D869C /* WelcomeWindow.xib in Resources */,
 				9449AA1419FADBB900095E6E /* Images.xcassets in Resources */,
 				949B57DF19F8A38600F412CF /* MainMenu.xib in Resources */,
+				94FED95D1E8746CC003D5626 /* statusitem@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

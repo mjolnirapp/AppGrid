@@ -7,3 +7,5 @@ AppGrid
 
 - Move and resize windows along an invisible "grid" of your screen.
 - Keys default to Mash (cmd + ctrl + opt) and Vim keys, but are customizable.
+
+![Screenshot](sshot.png)

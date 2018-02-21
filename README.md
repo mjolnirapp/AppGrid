@@ -14,6 +14,6 @@ AppGrid
 
 ---
 
-If you have found this app useful, please [donate](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AutumnJS.app%20donation&no_shipping=1) to support development.
+If you have found this app useful, please [donate](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1) to support development.
 
-![donate](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MpsgxtVEZ3z7ML95Q0Y8pem1LyZ01h1WPs3F5qokJphWXlcF8Q)
+[![donate](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MpsgxtVEZ3z7ML95Q0Y8pem1LyZ01h1WPs3F5qokJphWXlcF8Q)](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1)

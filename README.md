@@ -10,6 +10,7 @@ AppGrid
 
 ---
 
+![Animated screenshot](grid.gif)
 ![Screenshot](sshot.png)
 
 ---

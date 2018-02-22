@@ -1,7 +1,7 @@
 AppGrid
 =======
 
-*Grid-based keyboard window manager for Mac Os Ten*
+*Grid-based keyboard window manager for macOS with Vim hotkeys*
 
 [Download the app (.zip)](https://github.com/sdegutis/AppGrid/releases/download/1.0.4/AppGrid-1.0.4.zip)
 

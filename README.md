@@ -18,4 +18,4 @@ License
 
 MIT License
 
-AppGrid is Beer-ware: if you find it useful, feel free to ![buy me a beer](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1).
+AppGrid is 🍺ware: if you find it useful, feel free to [buy me a 🍺](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1).

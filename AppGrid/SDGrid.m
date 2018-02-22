@@ -101,7 +101,7 @@ NSPoint SDMidpoint(NSRect r) {
 }
 
 + (void) focusWindowLeft {
-    NSArray* closestWindows = [self windowsInDirectionFn:^double(double angle) { return M_PI - abs(angle); }
+    NSArray* closestWindows = [self windowsInDirectionFn:^double(double angle) { return M_PI - fabs(angle); }
                                        shouldDisregardFn:^BOOL(double deltaX, double deltaY) { return (deltaX >= 0); }];
     
     [self focusFirstValidWindowIn:closestWindows];

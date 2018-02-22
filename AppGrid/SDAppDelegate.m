@@ -48,6 +48,32 @@
     [SDGrid setup];
     [[SDPreferencesWindowController singleton] showAccessibilityWarningIfNeeded];
     [SDWelcomeWindowController showInstructionsWindowFirstTimeOnly];
+    [self askForBeer];
+}
+
+- (void) askForBeer {
+    NSUserNotification* note = [[NSUserNotification alloc] init];
+    note.identifier = @"buyappgridbeer";
+    
+    note.title = @"AppGrid was made with ❤️ by Steven Degutis.";
+    note.subtitle = @"It's open source and free and always will be.";
+    note.informativeText = @"Finding it useful? Buy me a 🍺 via PayPal.";
+    
+    note.deliveryDate = [NSDate dateWithTimeIntervalSinceNow: 60 * 60 * 24];
+    
+    [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
+    [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification: note];
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification {
+    return YES;
+}
+
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
+    [center removeDeliveredNotification: notification];
+    
+    static NSString* DONATE_URL = @"https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1";
+    [[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString: DONATE_URL]];
 }
 
 @end

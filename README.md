@@ -8,13 +8,14 @@ AppGrid
 - Move and resize windows along an invisible "grid" of your screen.
 - Keys default to Mash (cmd + ctrl + opt) and Vim keys, but are customizable.
 
----
+Animated Screenshot
+===================
 
 ![Animated screenshot](grid.gif)
-![Screenshot](sshot.png)
 
----
+License
+=======
 
-If you have found this app useful, please [donate](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1) to support development.
+MIT License
 
-[![donate](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MpsgxtVEZ3z7ML95Q0Y8pem1LyZ01h1WPs3F5qokJphWXlcF8Q)](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1)
+Beer-ware: if you enjoy AppGrid, feel free to ![buy me a beer](https://www.paypal.com/cgi-bin/webscr?business=sbdegutis@gmail.com&cmd=_donations&item_name=AppGrid%20donation&no_shipping=1).

@@ -14,6 +14,11 @@ Animated Screenshot
 
 ![Animated screenshot](grid.gif)
 
+Configuration
+-------------
+
+![Configuration panel](sshot.png)
+
 License
 -------
 

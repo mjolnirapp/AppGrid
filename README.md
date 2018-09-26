@@ -1,6 +1,12 @@
 AppGrid
 =======
 
+Hi. I've been writing productivity software for the past 10 years, and open sourcing it for everyone to use freely, including popular projects like Zephyros, Mjolnir, Hydra, AppGrid, and Phoenix. If you have used these or any of my other open source projects, please considering supporting my open source efforts through Patreon. Thanks!
+
+[Patreon.com/sdegutis](https://patreon.com/sdegutis)
+
+---
+
 *macOS window manager with Vim–like hotkeys*
 
 [Download the app (.zip)](https://github.com/sdegutis/AppGrid/releases/download/1.0.4/AppGrid-1.0.4.zip)

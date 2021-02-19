@@ -2,6 +2,7 @@
 
 #define MyGridWidthDefaultsKey @"MyGridWidthDefaultsKey"
 #define MyUseWindowMarginsDefaultsKey @"MyUseWindowMarginsDefaultsKey"
+#define MyWindowMarginsDefaultKey @"MyWindowMarginsDefaultKey"
 
 @implementation SDPreferences
 
@@ -19,6 +20,14 @@
 
 + (void) setUsesWindowMargins:(BOOL)usesWindowMargins {
     [[NSUserDefaults standardUserDefaults] setBool:usesWindowMargins forKey:MyUseWindowMarginsDefaultsKey];
+}
+
++ (NSInteger) windowMargins {
+    return [[NSUserDefaults standardUserDefaults] integerForKey:MyWindowMarginsDefaultKey];
+}
+
++ (void) setWindowMargins:(NSInteger)newWindowMargins {
+    [[NSUserDefaults standardUserDefaults] setInteger:newWindowMargins forKey:MyWindowMarginsDefaultKey];
 }
 
 @end

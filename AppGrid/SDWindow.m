@@ -125,7 +125,7 @@
     newFrame.size.height = gridProps.size.height * halfScreenHeight;
     
     if ([SDPreferences usesWindowMargins])
-        newFrame = NSInsetRect(newFrame, 5, 5);
+        newFrame = NSInsetRect(newFrame, [SDPreferences windowMargins], [SDPreferences windowMargins]);
 //    else
 //        newFrame = NSInsetRect(newFrame, 1, 1);
     

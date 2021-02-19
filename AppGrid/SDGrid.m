@@ -142,6 +142,16 @@ NSPoint SDMidpoint(NSRect r) {
     [self alignAllWindows];
 }
 
++ (void) increaseWindowMargins {
+    [SDPreferences setWindowMargins:[SDPreferences windowMargins] + 1];
+    [self alignAllWindows];
+}
+
++ (void) decreaseWindowMargins {
+    [SDPreferences setWindowMargins:MAX(0, [SDPreferences windowMargins] - 1)];
+    [self alignAllWindows];
+}
+
 + (void) alignAllWindows {
     for (SDWindow* win in [SDWindow visibleWindows]) {
         [win moveToGridProps:[win gridProps]];

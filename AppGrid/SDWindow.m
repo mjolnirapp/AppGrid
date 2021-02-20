@@ -126,8 +126,6 @@
     
     if ([SDPreferences usesWindowMargins])
         newFrame = NSInsetRect(newFrame, [SDPreferences windowMargins], [SDPreferences windowMargins]);
-//    else
-//        newFrame = NSInsetRect(newFrame, 1, 1);
     
     newFrame = NSIntegralRect(newFrame);
     

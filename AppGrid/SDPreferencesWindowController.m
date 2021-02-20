@@ -35,6 +35,9 @@
 @property IBOutlet NSButton* checkForUpdatesButton;
 @property IBOutlet NSButton* openAtLoginButton;
 @property IBOutlet NSButton* toggleMarginsButton;
+@property (weak) IBOutlet NSTextField *marginWidthLabel;
+@property (strong) IBOutlet NSStepper *marginStepper;
+
 @property (readonly) SDAccessibility* accessibility;
 
 @end
@@ -73,6 +76,11 @@
     }
     
     return !self.accessibility.isEnabled;
+}
+
+- (IBAction)marginWidth:(NSStepper *)sender {
+    _marginWidthLabel.integerValue = sender.integerValue;
+    [SDPreferences setWindowMargins: sender.integerValue];
 }
 
 - (SDAccessibility*) accessibility {
@@ -136,6 +144,9 @@
     
     [self.openAtLoginButton setState: [SDOpenAtLogin opensAtLogin] ? NSOnState : NSOffState];
     [self.toggleMarginsButton setState: [SDPreferences usesWindowMargins] ? NSOnState : NSOffState];
+    
+    self.marginWidthLabel.integerValue = [SDPreferences windowMargins];
+    self.marginStepper.integerValue = [SDPreferences windowMargins];
 }
 
 - (void) showWindow:(id)sender {

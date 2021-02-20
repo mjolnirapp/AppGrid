@@ -2,10 +2,13 @@
 
 @interface SDPreferences : NSObject
 
-+ (NSInteger) width;
-+ (void) setWidth:(NSInteger)newWidth;
++ (NSInteger)width;
++ (void)setWidth:(NSInteger)newWidth;
 
-+ (BOOL) usesWindowMargins;
-+ (void) setUsesWindowMargins:(BOOL)usesWindowMargins;
++ (BOOL)usesWindowMargins;
++ (void)setUsesWindowMargins:(BOOL)usesWindowMargins;
+
++ (NSInteger)windowMargins;
++ (void)setWindowMargins:(NSInteger)newWindowMargins;
 
 @end

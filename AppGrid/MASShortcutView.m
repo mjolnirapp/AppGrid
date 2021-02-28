@@ -327,10 +327,10 @@ void *kUserDataHint = &kUserDataHint;
 - (void)resetToolTips
 {
     if (_shortcutToolTipTag) {
-        [self removeToolTip:_shortcutToolTipTag], _shortcutToolTipTag = 0;
+        (void)([self removeToolTip:_shortcutToolTipTag]), _shortcutToolTipTag = 0;
     }
     if (_hintToolTipTag) {
-        [self removeToolTip:_hintToolTipTag], _hintToolTipTag = 0;
+        (void)([self removeToolTip:_hintToolTipTag]), _hintToolTipTag = 0;
     }
     
     if ((self.shortcutValue == nil) || self.recording || !self.enabled) return;

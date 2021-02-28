@@ -431,7 +431,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				INFOPLIST_FILE = "AppGrid/AppGrid-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdegutis.AppGrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -451,7 +451,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				INFOPLIST_FILE = "AppGrid/AppGrid-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdegutis.AppGrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

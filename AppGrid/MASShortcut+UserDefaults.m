@@ -4,10 +4,10 @@
 @interface MASShortcutUserDefaultsHotKey : NSObject
 
 @property (nonatomic, readonly) NSString *userDefaultsKey;
-@property (nonatomic, copy) void (^handler)();
+@property (nonatomic, copy) void (^handler)(void);
 @property (nonatomic, weak) id monitor;
 
-- (id)initWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)())handler;
+- (id)initWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)(void))handler;
 
 @end
 
@@ -25,7 +25,7 @@
     return shared;
 }
 
-+ (void)registerGlobalShortcutWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)())handler;
++ (void)registerGlobalShortcutWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)(void))handler;
 {
     MASShortcutUserDefaultsHotKey *hotKey = [[MASShortcutUserDefaultsHotKey alloc] initWithUserDefaultsKey:userDefaultsKey handler:handler];
     [[self registeredUserDefaultsHotKeys] setObject:hotKey forKey:userDefaultsKey];
@@ -56,7 +56,7 @@
 
 void *MASShortcutUserDefaultsContext = &MASShortcutUserDefaultsContext;
 
-- (id)initWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)())handler
+- (id)initWithUserDefaultsKey:(NSString *)userDefaultsKey handler:(void (^)(void))handler
 {
     self = [super init];
     if (self) {

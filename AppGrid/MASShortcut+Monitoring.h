@@ -2,7 +2,7 @@
 
 @interface MASShortcut (Monitoring)
 
-+ (id)addGlobalHotkeyMonitorWithShortcut:(MASShortcut *)shortcut handler:(void (^)())handler;
++ (id)addGlobalHotkeyMonitorWithShortcut:(MASShortcut *)shortcut handler:(void (^)(void))handler;
 + (void)removeGlobalHotkeyMonitor:(id)monitor;
 
 @end

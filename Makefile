@@ -7,7 +7,7 @@ release: $(TGZFILE) $(ZIPFILE)
 
 $(APPFILE): AppGrid AppGrid.xcodeproj
 	rm -rf $@
-	xcodebuild clean build > /dev/null
+	xcodebuild clean build
 	cp -R build/Release/AppGrid.app $@
 
 $(TGZFILE): $(APPFILE)

@@ -57,12 +57,12 @@
 }
 
 - (IBAction) toggleUseWindowMargins:(id)sender {
-    BOOL enabled = [sender state] == NSOnState;
+    BOOL enabled = [sender state] == NSControlStateValueOn;
     [SDPreferences setUsesWindowMargins: enabled];
 }
 
 - (IBAction) toggleOpenAtLogin:(id)sender {
-    BOOL enabled = [sender state] == NSOnState;
+    BOOL enabled = [sender state] == NSControlStateValueOn;
     [SDOpenAtLogin setOpensAtLogin: enabled];
 }
 
@@ -134,8 +134,8 @@
     self.shrinkToUpperRowShortcutView.associatedUserDefaultsKey = MyShrinkToUpperRowShortcutKey;
     self.fillEntireColumnShortcutView.associatedUserDefaultsKey = MyFillEntireColumnShortcutKey;
     
-    [self.openAtLoginButton setState: [SDOpenAtLogin opensAtLogin] ? NSOnState : NSOffState];
-    [self.toggleMarginsButton setState: [SDPreferences usesWindowMargins] ? NSOnState : NSOffState];
+    [self.openAtLoginButton setState: [SDOpenAtLogin opensAtLogin] ? NSControlStateValueOn : NSControlStateValueOff];
+    [self.toggleMarginsButton setState: [SDPreferences usesWindowMargins] ? NSControlStateValueOn : NSControlStateValueOff];
 }
 
 - (void) showWindow:(id)sender {

@@ -10,11 +10,11 @@ void UninstallEventHandler(void);
 @interface MASShortcutHotKey : NSObject
 
 @property (nonatomic, readonly) MASShortcut *shortcut;
-@property (nonatomic, readonly, copy) void (^handler)();
+@property (nonatomic, readonly, copy) void (^handler)(void);
 @property (nonatomic, readonly) EventHotKeyRef carbonHotKey;
 @property (nonatomic, readonly) UInt32 carbonHotKeyID;
 
-- (id)initWithShortcut:(MASShortcut *)shortcut handler:(void (^)())handler;
+- (id)initWithShortcut:(MASShortcut *)shortcut handler:(void (^)(void))handler;
 
 @end
 
@@ -22,7 +22,7 @@ void UninstallEventHandler(void);
 
 @implementation MASShortcut (Monitoring)
 
-+ (id)addGlobalHotkeyMonitorWithShortcut:(MASShortcut *)shortcut handler:(void (^)())handler
++ (id)addGlobalHotkeyMonitorWithShortcut:(MASShortcut *)shortcut handler:(void (^)(void))handler
 {
     NSString *monitor = [NSString stringWithFormat:@"%@", shortcut.description];
     if ([MASRegisteredHotKeys() objectForKey:monitor]) return nil;
@@ -57,7 +57,7 @@ void UninstallEventHandler(void);
 
 #pragma mark -
 
-- (id)initWithShortcut:(MASShortcut *)shortcut handler:(void (^)())handler
+- (id)initWithShortcut:(MASShortcut *)shortcut handler:(void (^)(void))handler
 {
     self = [super init];
     if (self) {

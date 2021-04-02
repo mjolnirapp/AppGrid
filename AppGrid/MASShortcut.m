@@ -228,10 +228,10 @@ NSString *const MASShortcutModifierFlags = @"ModifierFlags";
     unichar chars[4];
     NSUInteger count = 0;
     // These are in the same order as the menu manager shows them
-    if (self.modifierFlags & NSControlKeyMask) chars[count++] = kControlUnicode;
-    if (self.modifierFlags & NSAlternateKeyMask) chars[count++] = kOptionUnicode;
-    if (self.modifierFlags & NSShiftKeyMask) chars[count++] = kShiftUnicode;
-    if (self.modifierFlags & NSCommandKeyMask) chars[count++] = kCommandUnicode;
+    if (self.modifierFlags & NSEventModifierFlagControl) chars[count++] = kControlUnicode;
+    if (self.modifierFlags & NSEventModifierFlagOption) chars[count++] = kOptionUnicode;
+    if (self.modifierFlags & NSEventModifierFlagShift) chars[count++] = kShiftUnicode;
+    if (self.modifierFlags & NSEventModifierFlagCommand) chars[count++] = kCommandUnicode;
     return (count ? [NSString stringWithCharacters:chars length:count] : @"");
 }
 
@@ -240,7 +240,7 @@ NSString *const MASShortcutModifierFlags = @"ModifierFlags";
 - (BOOL)shouldBypass
 {
     NSString *codeString = self.keyCodeString;
-    return (self.modifierFlags == NSCommandKeyMask) && ([codeString isEqualToString:@"W"] || [codeString isEqualToString:@"Q"]);
+    return (self.modifierFlags == NSEventModifierFlagCommand) && ([codeString isEqualToString:@"W"] || [codeString isEqualToString:@"Q"]);
 }
 
 BOOL MASShortcutAllowsAnyHotkeyWithOptionModifier = NO;
@@ -270,12 +270,12 @@ BOOL MASShortcutAllowsAnyHotkeyWithOptionModifier = NO;
     if (!hasModifierFlags) return NO;
 
     // Allow any hotkey containing Control or Command modifier
-    BOOL includesCommand = ((_modifierFlags & NSCommandKeyMask) > 0);
-    BOOL includesControl = ((_modifierFlags & NSControlKeyMask) > 0);
+    BOOL includesCommand = ((_modifierFlags & NSEventModifierFlagCommand) > 0);
+    BOOL includesControl = ((_modifierFlags & NSEventModifierFlagControl) > 0);
     if (includesCommand || includesControl) return YES;
 
     // Allow Option key only in selected cases
-    BOOL includesOption = ((_modifierFlags & NSAlternateKeyMask) > 0);
+    BOOL includesOption = ((_modifierFlags & NSEventModifierFlagOption) > 0);
     if (includesOption) {
 
         // Always allow Option-Space and Option-Escape because they do not have any bind system commands

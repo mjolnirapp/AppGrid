@@ -1,7 +1,6 @@
 name: build
 on:
   - push
-  - pull_request
 jobs:
   macos:
     runs-on: macOS-latest

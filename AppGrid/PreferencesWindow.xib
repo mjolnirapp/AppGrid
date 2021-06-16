@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment version="1090" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,6 +18,8 @@
                 <outlet property="focusWindowUpShortcutView" destination="137" id="146"/>
                 <outlet property="growRightShortcutView" destination="45" id="61"/>
                 <outlet property="increaseGridWidthShortcutView" destination="110" id="127"/>
+                <outlet property="marginStepper" destination="2ey-SX-XKN" id="pbD-gI-Cw5"/>
+                <outlet property="marginWidthLabel" destination="ZY0-cI-q11" id="LGI-Pl-TCu"/>
                 <outlet property="maximizeShortcutView" destination="121" id="128"/>
                 <outlet property="moveLeftShortcutView" destination="21" id="32"/>
                 <outlet property="moveNextScreenShortcutView" destination="99" id="106"/>
@@ -32,17 +34,17 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="-3" userLabel="Application"/>
         <window title="AppGrid Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="prefs" animationBehavior="default" id="5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="1394" y="748" width="600" height="387"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="387"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="158">
+                    <button id="158">
                         <rect key="frame" x="148" y="283" width="172" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Launch AppGrid at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="165">
@@ -53,18 +55,7 @@
                             <action selector="toggleOpenAtLogin:" target="-2" id="216"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="220">
-                        <rect key="frame" x="148" y="263" width="223" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Allow margins between windows" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="221">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="toggleUseWindowMargins:" target="-2" id="223"/>
-                        </connections>
-                    </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="160">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="160">
                         <rect key="frame" x="81" y="284" width="63" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Behavior:" id="163">
@@ -73,7 +64,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="168">
+                    <button verticalHuggingPriority="750" id="168">
                         <rect key="frame" x="144" y="314" width="162" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Enable Accessibility" bezelStyle="rounded" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="175">
@@ -89,7 +80,7 @@
                             </binding>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="170">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="170">
                         <rect key="frame" x="59" y="350" width="85" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Accessibility:" id="173">
@@ -98,7 +89,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="171">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="171">
                         <rect key="frame" x="308" y="323" width="16" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSStatusAvailable" id="172"/>
@@ -106,7 +97,7 @@
                             <binding destination="-2" name="value" keyPath="self.isAccessibilityEnabledImage" id="211"/>
                         </connections>
                     </imageView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="176">
+                    <button verticalHuggingPriority="750" id="176">
                         <rect key="frame" x="144" y="13" width="174" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Reset to Default Keys" bezelStyle="rounded" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="177">
@@ -117,7 +108,7 @@
                             <action selector="resetToDefaults:" target="-2" id="178"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="179">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="179">
                         <rect key="frame" x="85" y="205" width="59" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Hotkeys:" id="180">
@@ -126,7 +117,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="169">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="169">
                         <rect key="frame" x="148" y="350" width="239" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Accessibility is enabled. You're all set!" id="174">
@@ -138,7 +129,7 @@
                             <binding destination="-2" name="value" keyPath="self.maybeEnableAccessibilityString" id="213"/>
                         </connections>
                     </textField>
-                    <tabView fixedFrame="YES" initialItem="190" translatesAutoresizingMaskIntoConstraints="NO" id="189">
+                    <tabView initialItem="190" id="189">
                         <rect key="frame" x="143" y="41" width="403" height="190"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
@@ -148,11 +139,11 @@
                                     <rect key="frame" x="10" y="33" width="383" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21" customClass="MASShortcutView">
+                                        <customView id="21" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="104" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39">
+                                        <textField verticalHuggingPriority="750" id="39">
                                             <rect key="frame" x="66" y="106" width="119" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move window left:" id="40">
@@ -161,11 +152,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41" customClass="MASShortcutView">
+                                        <customView id="41" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="76" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42">
+                                        <textField verticalHuggingPriority="750" id="42">
                                             <rect key="frame" x="57" y="78" width="128" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move window right:" id="43">
@@ -174,11 +165,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="51" customClass="MASShortcutView">
+                                        <customView id="51" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="20" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52">
+                                        <textField verticalHuggingPriority="750" id="52">
                                             <rect key="frame" x="59" y="22" width="125" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move to lower row:" id="53">
@@ -187,11 +178,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54" customClass="MASShortcutView">
+                                        <customView id="54" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="48" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55">
+                                        <textField verticalHuggingPriority="750" id="55">
                                             <rect key="frame" x="58" y="50" width="127" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move to upper row:" id="56">
@@ -208,11 +199,11 @@
                                     <rect key="frame" x="10" y="33" width="383" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="45" customClass="MASShortcutView">
+                                        <customView id="45" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="104" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                                        <textField verticalHuggingPriority="750" id="46">
                                             <rect key="frame" x="92" y="107" width="93" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Grow to right:" id="47">
@@ -221,11 +212,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="48" customClass="MASShortcutView">
+                                        <customView id="48" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="76" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="49">
+                                        <textField verticalHuggingPriority="750" id="49">
                                             <rect key="frame" x="68" y="79" width="117" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Shrink from right:" id="50">
@@ -234,11 +225,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="121" customClass="MASShortcutView">
+                                        <customView id="121" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="20" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="122">
+                                        <textField verticalHuggingPriority="750" id="122">
                                             <rect key="frame" x="64" y="22" width="121" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Maximize window:" id="124">
@@ -247,11 +238,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="57" customClass="MASShortcutView">
+                                        <customView id="57" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="48" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="58">
+                                        <textField verticalHuggingPriority="750" id="58">
                                             <rect key="frame" x="69" y="51" width="116" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Fit entire column:" id="59">
@@ -268,11 +259,11 @@
                                     <rect key="frame" x="10" y="33" width="383" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="131" customClass="MASShortcutView">
+                                        <customView id="131" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="104" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="132">
+                                        <textField verticalHuggingPriority="750" id="132">
                                             <rect key="frame" x="46" y="107" width="139" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Focus window to left:" id="133">
@@ -281,11 +272,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="134" customClass="MASShortcutView">
+                                        <customView id="134" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="76" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="135">
+                                        <textField verticalHuggingPriority="750" id="135">
                                             <rect key="frame" x="37" y="79" width="148" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Focus window to right:" id="136">
@@ -294,11 +285,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="137" customClass="MASShortcutView">
+                                        <customView id="137" customClass="MASShortcutView">
                                             <rect key="frame" x="189" y="48" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="138">
+                                        <textField verticalHuggingPriority="750" id="138">
                                             <rect key="frame" x="45" y="51" width="139" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Focus window above:" id="139">
@@ -307,11 +298,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="140" customClass="MASShortcutView">
+                                        <customView id="140" customClass="MASShortcutView">
                                             <rect key="frame" x="189" y="20" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="141">
+                                        <textField verticalHuggingPriority="750" id="141">
                                             <rect key="frame" x="46" y="23" width="138" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Focus window below:" id="142">
@@ -328,11 +319,11 @@
                                     <rect key="frame" x="10" y="33" width="383" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="99" customClass="MASShortcutView">
+                                        <customView id="99" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="104" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="100">
+                                        <textField verticalHuggingPriority="750" id="100">
                                             <rect key="frame" x="49" y="106" width="136" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move to next screen:" id="105">
@@ -341,11 +332,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="101" customClass="MASShortcutView">
+                                        <customView id="101" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="76" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="102">
+                                        <textField verticalHuggingPriority="750" id="102">
                                             <rect key="frame" x="23" y="78" width="162" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Move to previous screen:" id="104">
@@ -362,11 +353,11 @@
                                     <rect key="frame" x="10" y="33" width="383" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="110" customClass="MASShortcutView">
+                                        <customView id="110" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="104" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="111">
+                                        <textField verticalHuggingPriority="750" id="111">
                                             <rect key="frame" x="56" y="106" width="129" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Increase grid width:" id="116">
@@ -375,11 +366,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="112" customClass="MASShortcutView">
+                                        <customView id="112" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="76" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="113">
+                                        <textField verticalHuggingPriority="750" id="113">
                                             <rect key="frame" x="51" y="78" width="134" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Decrease grid width:" id="115">
@@ -388,11 +379,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="8" customClass="MASShortcutView">
+                                        <customView id="8" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="20" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="33">
+                                        <textField verticalHuggingPriority="750" id="33">
                                             <rect key="frame" x="22" y="22" width="163" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Snap all windows to grid:" id="34">
@@ -401,11 +392,11 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="117" customClass="MASShortcutView">
+                                        <customView id="117" customClass="MASShortcutView">
                                             <rect key="frame" x="190" y="48" width="173" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         </customView>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="118">
+                                        <textField verticalHuggingPriority="750" id="118">
                                             <rect key="frame" x="47" y="50" width="138" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Snap window to grid:" id="120">
@@ -419,21 +410,52 @@
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="225">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="225">
                         <rect key="frame" x="418" y="247" width="128" height="128"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Xcode" id="226"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="226"/>
                     </imageView>
+                    <button id="220">
+                        <rect key="frame" x="148" y="263" width="223" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Margins" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="221">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleUseWindowMargins:" target="-2" id="223"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="ZY0-cI-q11">
+                        <rect key="frame" x="260" y="263" width="40" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="0" drawsBackground="YES" id="XKh-Km-JDU">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Ng1-Hj-adA">
+                                <real key="minimum" value="1"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="menu" size="11"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" id="2ey-SX-XKN">
+                        <rect key="frame" x="302" y="258" width="19" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="5" id="3dP-8G-vIh"/>
+                        <connections>
+                            <action selector="marginWidth:" target="-2" id="PPX-UE-LU5"/>
+                        </connections>
+                    </stepper>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="17"/>
             </connections>
-            <point key="canvasLocation" x="353" y="289.5"/>
+            <point key="canvasLocation" x="-858" y="-72.5"/>
         </window>
     </objects>
     <resources>
+        <image name="NSApplicationIcon" width="32" height="32"/>
         <image name="NSStatusAvailable" width="16" height="16"/>
-        <image name="Xcode" width="128" height="128"/>
     </resources>
 </document>

@@ -20,3 +20,5 @@ DerivedData
 /AppGrid.app
 /AppGrid-*.tgz
 /AppGrid-*.zip
+/Index
+Index/*

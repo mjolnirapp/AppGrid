@@ -12,7 +12,7 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Increment Version
         run: ./version.sh
       - uses: EndBug/add-and-commit@v7

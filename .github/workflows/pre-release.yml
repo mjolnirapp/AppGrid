@@ -7,7 +7,6 @@ on:
       - "master"
 
 jobs:
-
   macos:
     runs-on: macOS-latest
     steps:

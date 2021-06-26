@@ -4,7 +4,7 @@ name: "pre-release"
 on:
   push:
     branches:
-      - "test_release"
+      - "master"
 
 jobs:
   macos:

@@ -12,14 +12,14 @@ MSG=$(git log -1 --format=%s)
 # https://www.conventionalcommits.org/en/v1.0.0/
 case $MSG in
   "fix"*)
-          PATCH=$($PATCH + 1)
+          PATCH=$(($PATCH + 1))
     ;;
   "feat"*)
-          MINOR=$($MINOR + 1)
+          MINOR=$(($MINOR + 1))
           PATCH="0"
     ;;
   "BREAKING CHANGE"*)
-          MAJOR=$($MAJOR + 1)
+          MAJOR=$(($MAJOR + 1))
           MINOR="0"
           PATCH="0"
     ;;

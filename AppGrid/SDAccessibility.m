@@ -1,6 +1,6 @@
 #import "SDAccessibility.h"
 
-extern Boolean AXIsProcessTrustedWithOptions(CFDictionaryRef options) __attribute__((weak_import));
+extern Boolean AXIsProcessTrustedWithOptions(CFDictionaryRef options);
 extern CFStringRef kAXTrustedCheckOptionPrompt __attribute__((weak_import));
 
 @implementation SDAccessibility
@@ -18,20 +18,11 @@ extern CFStringRef kAXTrustedCheckOptionPrompt __attribute__((weak_import));
 }
 
 + (BOOL) isEnabled {
-    if (AXIsProcessTrustedWithOptions != NULL)
-        return AXIsProcessTrustedWithOptions(NULL);
-    else
-        return AXAPIEnabled();
+    return AXIsProcessTrustedWithOptions(NULL);
 }
 
 + (void) openPanel {
-    if (AXIsProcessTrustedWithOptions != NULL) {
-        AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)@{(__bridge id)kAXTrustedCheckOptionPrompt: @YES});
-    }
-    else {
-        static NSString* script = @"tell application \"System Preferences\"\nactivate\nset current pane to pane \"com.apple.preference.universalaccess\"\nend tell";
-        [[[NSAppleScript alloc] initWithSource:script] executeAndReturnError:nil];
-    }
+    AXIsProcessTrustedWithOptions((__bridge CFDictionaryRef)@{(__bridge id)kAXTrustedCheckOptionPrompt: @YES});
 }
 
 + (instancetype) singleton {
